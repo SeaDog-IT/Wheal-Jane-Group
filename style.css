@@ -1,0 +1,385 @@
+/*
+ Theme Name:   Wheal Jane Consultancy
+ Theme URI:    https://www.digitalrockpool.com/
+ Description:  Custom theme for Wheal Jane Consultancy
+ Author:       Seadog IT
+ Author URI:   https://www.seadog.it 
+ Template:     bricks
+ Version:      1.0
+ Text Domain:  bricks
+*/
+
+/* *** TO SORT * ***/
+.wordpress-content strong {
+  font-weight: 500;
+}
+
+.margin-top-zero {
+  margin-top: 0;
+}
+
+
+
+/* *** Header *** */
+header.scrolling #header-container {
+  height: 24px;
+  transition: all 1s ease-in;
+}
+
+header #header-scrolling-logo {
+  opacity: 0;
+}
+
+header.scrolling #header-scrolling-logo {
+  opacity: 1;
+  transition: all 1s ease-in 1s;
+}
+
+header.scrolling #header-logo {
+  opacity: 0;
+  top: -25px;
+  transition: all 1s ease-in;
+}
+
+/* *** Service Icons *** */
+.mm-block:hover span.bricks-button {
+  color: #8c3107!important;
+}
+
+.mm-block::before,
+.post-header-block::before {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  position: relative;
+  top: 60px;
+  width: 60px;
+}
+
+.mm-block::before {
+  left: -75px;
+  opacity: 0.6;
+}
+
+.post-header-block::before {
+  left: -115px;
+  opacity: 1;
+}
+
+.mm-block:hover::before {
+  opacity: 1;
+}
+
+.mm-enquiry::before {
+  background-image: url(lib/img/icon-enquiry.png);
+}
+
+.mm-contact::before {
+  background-image: url(lib/img/icon-contact.png);
+}
+
+#animate-block.hover-grow,
+.page-environmental #animate-block,
+.page-drone #animate-block,
+.page-geotechnical #animate-block,
+.page-mining #animate-block,
+.page-mundic #animate-block {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+/* *** Post Archive *** */
+.blog .post-header-block::before,
+.archive .post-header-block::before {
+  background-image: url(lib/img/icon-wheal-jane.png);
+}
+
+.archive-metro-posts .overlay-inner {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+
+.archive-metro-posts .overlay-inner div {
+  margin-bottom: auto;
+  width: fit-content;
+  z-index: 1;
+}
+
+.archive-metro-posts .overlay-inner h6 a {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.related-articles a,
+.related-articles h4 a:hover {
+  text-decoration: none;
+}
+
+.related-articles a:hover {
+  text-decoration: underline;
+}
+
+.related-articles h4 a:hover {
+  color: #808080;
+}
+
+/* *** Service Bar *** */
+@media only screen and (max-width: 1444px) {
+  #service-icon-container {
+    padding-left: 192px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #service-icon-container {
+    padding-left: 0px;
+  }
+}
+
+/* *** Service Colours *** */
+#animate-block.bg-color-environmental,
+#btn-environmental,
+#mobile-news-menu .dd-environmental,
+.page-environmental #animate-block,
+.page-drone #animate-block.bg-color-environmental,
+.page-geotechnical #animate-block.bg-color-environmental,
+.page-mining #animate-block.bg-color-environmental,
+.page-mundic #animate-block.bg-color-environmental {
+  background-color: #5aaf51;
+  border-color: #5aaf51;
+}
+
+a#mm-environmental:hover span {
+  color: #5aaf51!important;
+}
+
+.category-environmental .post-header-block,
+.post-environmental .post-header-block,
+.page-environmental .post-header-block {
+  border-color: #5aaf51!important;
+}
+
+#btn-environmental:hover{
+  border-color: #36902D;
+}
+
+.mm-environmental::before,
+.category-environmental .post-header-block::before,
+.post-environmental .post-header-block::before {
+  background-image: url(lib/img/icon-environmental.png);
+}
+
+#animate-block.bg-color-drone,
+#btn-drone,
+#mobile-news-menu .dd-drone,
+.page-drone #animate-block,
+.page-environmental #animate-block.bg-color-drone,
+.page-geotechnical #animate-block.bg-color-drone,
+.page-mining #animate-block.bg-color-drone,
+.page-mundic #animate-block.bg-color-drone {
+  background-color: #02a7f3;
+  border-color: #02a7f3;
+}
+
+a#mm-drone:hover span {
+  color: #02a7f3!important;
+}
+
+.category-drone .post-header-block,
+.post-drone .post-header-block,
+.page-drone .post-header-block {
+  border-color: #02a7f3!important;
+}
+
+#btn-drone:hover {
+  border-color: #0172A8;
+}
+
+.mm-drone::before,
+.category-drone .post-header-block::before,
+.post-drone .post-header-block::before {
+  background-image: url(lib/img/icon-drone.png);
+}
+
+#animate-block.bg-color-geotechnical,
+#btn-geotechnical,
+#mobile-news-menu .dd-geotechnical,
+.page-geotechnical #animate-block,
+.page-environmental #animate-block.bg-color-geotechnical,
+.page-drone #animate-block.bg-color-geotechnical,
+.page-mining #animate-block.bg-color-geotechnical,
+.page-mundic #animate-block.bg-color-geotechnical {
+  background-color: #8c3107;
+  border-color: #8c3107;
+}
+
+a#mm-geotechnical:hover span {
+  color: #8c3107!important;
+}
+
+.category-geotechnical .post-header-block,
+.post-geotechnical .post-header-block,
+.page-geotechnical .post-header-block {
+  border-color: #8c3107!important;
+}
+
+#btn-geotechnical:hover{
+  border-color: #662000;
+}
+
+.mm-geotechnical::before,
+.category-geotechnical .post-header-block::before,
+.post-geotechnical .post-header-block::before  {
+  background-image: url(lib/img/icon-geotechnical.png);
+}
+
+#animate-block.bg-color-mundic,
+#btn-mundic,
+#mobile-news-menu .dd-mundic,
+.page-mundic #animate-block,
+.page-environmental #animate-block.bg-color-mundic,
+.page-drone #animate-block.bg-color-mundic,
+.page-geotechnical #animate-block.bg-color-mundic,
+.page-mundic #animate-block.bg-color-mundic {
+  background-color: #861262;
+  border-color: #861262;
+}
+
+a#mm-mundic:hover span {
+  color: #861262!important;
+}
+
+.category-mundic .post-header-block,
+.post-mundic .post-header-block,
+.page-mundic .post-header-block {
+  border-color: #861262!important;
+}
+
+#btn-mundic:hover {
+  border-color: #6D024D;
+}
+
+.mm-mundic::before,
+.category-mundic .post-header-block::before,
+.post-mundic .post-header-block::before {
+  background-image: url(lib/img/icon-mundic.png);
+}
+
+#animate-block.bg-color-mining,
+#btn-mining,
+#mobile-news-menu .dd-mining,
+.page-mining #animate-block,
+.page-environmental #animate-block.bg-color-mining,
+.page-drone #animate-block.bg-color-mining,
+.page-geotechnical #animate-block.bg-color-mining,
+.page-mining #animate-block.bg-color-mining {
+  background-color: #14326e;
+  border-color: #14326e;
+}
+
+a#mm-mining:hover span {
+  color: #14326e!important;
+}
+
+.category-mining .post-header-block,
+.post-mining .post-header-block,
+.page-mining .post-header-block {
+  border-color: #14326e!important;
+}
+
+#btn-mining:hover {
+  border-color: #082357;
+}
+
+.mm-mining::before,
+.category-mining .post-header-block::before,
+.post-mining .post-header-block::before {
+  background-image: url(lib/img/icon-mining.png);
+}
+
+/* *** Sub Navigation *** */
+.inpage-menu .bricks-nav-menu > li.active-link > a {
+  background-color: #c8d1d1!important;
+  border-color: #c8d1d1!important;
+}
+
+.brxe-heading {
+  scroll-margin-top: 112px;
+}
+
+/* *** Service Colours *** */
+footer img {
+  mix-blend-mode: multiply;
+}
+
+/* *** Gravity Forms *** */
+.gform_wrapper.gravity-theme .gform_heading .gform_required_legend {
+  float: right;
+  font-size: 12px;
+}
+.gform_wrapper.gravity-theme .gform_body .gfield_label {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.gform_wrapper.gravity-theme .gform_body .ginput_complex label {
+  color: #000;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-top: 0;
+}
+
+.gform_wrapper.gravity-theme .gform_body .gfield_checkbox label,
+.gform_wrapper.gravity-theme .gform_body .gfield_radio label,
+.gform_wrapper.gravity-theme .gform_body .ginput_container_consent label {
+  color: #000;
+  display:inline-block;
+  font-weight: 300;
+}
+
+.gform_wrapper.gravity-theme .gform_body .field_description_above .gfield_description {
+  padding-bottom: 0;
+  margin-top: -4px;
+}
+
+.gform_wrapper.gravity-theme .gform_body input {
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.gform_wrapper.gravity-theme .gform_body textarea {
+  border-radius: 4px;
+}
+
+.gform_wrapper.gravity-theme .gform_body .gfield textarea::placeholder {
+  color: #A9A9A9;
+}
+
+.gform_wrapper.gravity-theme .gform_body .gfield_consent_description {
+  border: 0;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.gform_wrapper.gravity-theme .gform_footer .gform_button {
+  background-color: #14326e;
+  border: 4px solid #14326e;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+}
+
+.gform_wrapper.gravity-theme .gform_footer .gform_button:hover {
+  background-color: #234587;
+}

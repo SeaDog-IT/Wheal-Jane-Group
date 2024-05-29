@@ -1,0 +1,140 @@
+/* Stylesheet: Login Styles
+
+@package	Rockpool
+@author		Digital Rockpool
+@link		https://www.digitalrockpool.com
+@copyright	Copyright (c) 2023, Digital Rockpool LTD
+@license	GPL-2.0+ */
+
+/* LOGIN SCREEN */
+body {
+	background: url('../img/background-login.jpg'); /* 1920 x 1080 */
+  background-attachment: fixed;
+	background-color: #14326e;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.login form {
+	background-color: #ffffff;
+	border: 0;
+  box-shadow: none!important;
+	margin: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+.login h1 a  {
+	background-color: #ffffff;
+	background-image: url('../img/logo-login.png'); /* 518 x 272 */
+	background-repeat: no-repeat;
+  background-position: center;
+	background-size: 200px 105px;
+	cursor: default;
+	height: 155px;
+  margin-bottom: 0px;
+  pointer-events: none;
+  width: auto !important;
+}
+
+.login label {
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+	border: 1px solid #e1e1e1;
+	border-radius: 0.25rem;
+	background-color: #fcfcfc;
+	color: #000;
+	font-size: 14px;
+	height: 40px;
+	padding: .375rem .75rem;
+	outline: 0;
+}
+
+.login .button-primary {
+	background-color: #14326e!important;
+	border: none!important;
+	border-radius: 0.25rem;
+	box-shadow: none;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	height: 40px!important;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	text-shadow: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.login .button-primary:hover {
+	background-color: #3E5B95!important;
+}
+
+.forgetmenot label {
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+.login p {
+	color: #10B2C2;
+}
+
+.login #nav {
+	background-color: #ffffff;
+	margin: 0;
+	text-align: center;
+	padding: 0 0 24px;
+}
+
+.login #nav a {
+	color: #14326e;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 0 8px;
+}
+
+.login #nav a:hover {
+	color: #3E5B95;
+}
+
+.login .privacy-policy-page-link,
+.login #backtoblog {
+	display: none;
+}
+
+.login #login_error {
+  background-color: #fbc5c5;
+	border-left: 4px solid #dc3232;
+  box-shadow: none;
+  color: #000;
+	font-size: 14px;
+  padding: 12px;
+  margin-bottom: 0px;
+}
+
+
+ .login .message, .login .success {
+	background-color: #ffe4c4;
+	border-left: 4px solid #ff9a21;
+  box-shadow: none;
+  color: #000;
+	font-size: 14px;
+  padding: 12px;
+  margin-bottom: 0px;
+ }
